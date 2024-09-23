@@ -1,0 +1,7 @@
+<h2>Confirmar Eliminación</h2>
+<p>¿Estas seguro que quieres eliminar este mensaje?</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Eliminar</button>
+    <a href="{% url 'mensajes_recibidos' %}">Cancelar</a>
+</form>
